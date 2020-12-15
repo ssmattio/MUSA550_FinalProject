@@ -1,5 +1,5 @@
 ---
-title: "Example: Embedding Altair & Hvplot Charts"
+title: "Regression"
 date: 2019-04-13
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
