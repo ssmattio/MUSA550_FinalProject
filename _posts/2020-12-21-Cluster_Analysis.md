@@ -1,5 +1,5 @@
 ---
-title: "Example: Embedding Matplotlib Images"
+title: "Cluster Analysis"
 date: 2019-04-17
 published: true
 tags: [dataviz, matplotlib]
