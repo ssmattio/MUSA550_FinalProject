@@ -7,7 +7,7 @@ excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart-1: "charts/measlesAltair.json"
 altair-loader:
-  ilil_test1: "charts/myOutputChart1.json"
+  ilil-test-1: "charts/myOutputChart1.json"
 hv-loader:
   hv-chart-1: "charts/measlesHvplot.html"
 toc: true
@@ -33,7 +33,7 @@ alt.renderers.enable('notebook')
 
 this is an example of text 
 
-<div id="ilil_test1"></div>
+<div id="ilil-test-1"></div>
 
 this is an example of text 
 
