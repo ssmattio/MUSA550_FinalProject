@@ -27,6 +27,8 @@ import altair as alt
 alt.renderers.enable('notebook')
 ```
 
+## Sara I am testing adding a chart here
+
 ## HvPlot Example
 
 Lastly, the measles incidence produced using the HvPlot package:
