@@ -9,7 +9,7 @@ toc_sticky: true
 read_time: false
 ---
 
-# KMeans Cluster Analysis
+## KMeans Cluster Analysis
 
 After reviewing the exploratory data and maps, we wish to identify clusters based on several census-based data we are importing into our dataset.
 These added columns represent several assumptions that we wish to test:
