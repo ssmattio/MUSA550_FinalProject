@@ -6,6 +6,7 @@ tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart-1: "charts/measlesAltair.json"
+  ilil-test-1: "charts/myOutputChart1.json"
 hv-loader:
   hv-chart-1: "charts/measlesHvplot.html"
 toc: true
@@ -26,6 +27,14 @@ This was produced using Altair and embedded in this static web page. Note that y
 import altair as alt
 alt.renderers.enable('notebook')
 ```
+
+## Sara I am testing adding a chart here
+
+this is an example of text 
+
+<div id="ilil-test-1"></div>
+
+this is an example of text 
 
 ## HvPlot Example
 

@@ -4,17 +4,54 @@ date: 2020-12-21
 published: true
 tags: [dataviz, matplotlib]
 excerpt: "This is an example blog post that embeds a matplotlib image."
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 read_time: false
 ---
 
-# Section 1
+## KMeans Cluster Analysis
 
-This is an example post. The posts are written in markdown.
+After reviewing the exploratory data and maps, we wish to identify clusters based on several census-based data we are importing into our dataset.
+These added columns represent several assumptions that we wish to test:
 
-## Abandoned Cars
+## Added variables from the ACS
 
-Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
+MISSING EXPL OF VARIABLES CREATION
 
-![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/distance_to_abandoned_cars.png)
+MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
+
+## Initial Cluster analysis
+
+We first test the merged data using five clusters, while scaling the different variables:
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+kmeans = KMeans(n_clusters=5)
+
+NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per','ind_const_per']])
+
+scaler = StandardScaler()
+
+kmeans.fit(NPS_census_scaled)
+
+NPS_census['label'] = kmeans.labels_
+
+alt.renderers.enable('notebook')
+```
+The initial test leads to the dividion that is shown within this plot: 
+
+the plot of the chart with the colors and weights
+
+The plot of the first map
+
+## Adjusting the number of clusters using the elbow method
+
+an explanation of why
+
+The graph of the first test
+
+the code to get the value
+
+## Adjusted Map of Clusters
