@@ -27,7 +27,7 @@ the number of NPS sites in a state.
 First the data was split 70/30 into training and test sets. Then, the indicators were checked for high
 correlation.
 
-![](charts/Regression_Correlation.jpg)
+![Correlation](charts/Regression_Correlation.jpg)
 
 ```python
 import altair as alt
