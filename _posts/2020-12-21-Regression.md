@@ -29,6 +29,11 @@ alt.renderers.enable('notebook')
 
 ## Sara I am testing adding a chart here
 
+altair-loader:
+  ilil_test1: "C:/Users/ililf/Dropbox/Fall_2020/MUSA_550_NICK/final_musa/myOutputChart1.json"
+  
+<div id="ilil_test1"></div>
+
 ## HvPlot Example
 
 Lastly, the measles incidence produced using the HvPlot package:
