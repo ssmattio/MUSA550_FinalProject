@@ -57,8 +57,12 @@ The initial test leads to the dividion that is shown within this plot:
 
 Additional expl on plot...
 
+when mapping these clusters:
+
 
 The plot of the first map
+
+the distrb. of it
 
 ## Adjusting the number of clusters using the elbow method
 
