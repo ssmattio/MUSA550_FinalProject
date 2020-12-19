@@ -33,13 +33,13 @@ The variables are broad and cover race, income, and education. They are construc
 * % below poverty rate = HH income in the past 12 months below poverty rate 
 * % high income = HH with income of 150,000 and higher from all HH
 
-<div id="altair-plot-1"></div>
+<div id="hv-chart-1"></div>
 
 ## testing for autocorrelation
 
-missing text 
+after XXX
 
-<div id="hv-chart-1"></div>
+<div id="altair-chart-1"></div>
 
 missing text about pairs
 
