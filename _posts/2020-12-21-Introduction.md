@@ -15,6 +15,7 @@ tags:
 The National Register of Historic Places is the US official built heritage preservation list. Authorized by the National Historic Preservation Act of 1966, the NRHP is part of a national program to identify, evaluate, and protect America's historic and archeological resources. As of January 2020, the dataset of NHRP listed properties contains 95,354 items, that are distributed throughout all the states. We wish to review the socio-economic, geographical and temporal trends regarding this growing list of heritage.
 
 **SOURCES**
+
 NPS public data: https://www.nps.gov/subjects/nationalregister/database-research.htm , 
 https://public-nps.opendata.arcgis.com/datasets/nps-national-register-of-historic-places-locations,
 The ACS
