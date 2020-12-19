@@ -23,7 +23,7 @@ These added columns represent several assumptions that we wish to test:
 
 ## Added variables from the ACS
 
-After adding the GDP data for the exploratory part, we wish to add more variables that are census-based. 
+To the GDP variable that was added within the exploratory data part, we wish to add more variables that are census-based. 
 These veriables were selected since we assum possible correlation between them and the count of listing per population. 
 The variables are broad and cover race, income, and education. They are constructed from the original categories of the census:
 
@@ -37,11 +37,11 @@ The variables are broad and cover race, income, and education. They are construc
 
 ## testing for autocorrelation
 
-after XXX
+Now that we have both the count per population, the GDP and the census variables, we wish to test for autocorrelation between tha variables. We do so to avoid using too similar variables within our clustering analysis, with the threshold of .6 to guide us.
 
 <div id="altair-chart-1"></div>
 
-missing text about pairs
+As seen, the unemployment and the poverty variables are highly correlated, as well as the higher incom with higher education. We will choose one of each pair to use in our clustering analysis.
 
 ## Initial Cluster analysis
 
@@ -67,13 +67,13 @@ The initial test leads to the dividion that is shown within this plot:
 
 <div id="altair-plot-1"></div>
 
-Additional expl on plot...
+The chart presents listings per population vs. the GDP of the last quarter of 2019. The color represents the five clusters that were created. 
 
 when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-the distrb. of it?? MISSING
+MISSING DISTRIBUITON TABLE!
 
 ## Adjusting the number of clusters using the elbow method
 
