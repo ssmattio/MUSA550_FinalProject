@@ -11,6 +11,7 @@ altair-loader:
   altair-map-2: "charts/map2_clusters.json"
 hv-loader:
   hv-chart-1: "charts/table_variables.html"
+  hv-chart-2: "charts/table2_dist.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -68,12 +69,15 @@ The initial test leads to the dividion that is shown within this plot:
 <div id="altair-plot-1"></div>
 
 The chart presents listings per population vs. the GDP of the last quarter of 2019. The color represents the five clusters that were created. 
+We can see that when factoring the amount of population, the correlation appears to be negative. When reviewing only count vs. GDP, it display an opposit correlation.
 
 when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-MISSING DISTRIBUITON TABLE!
+this is the distribution of the clusters:
+
+<div id="hv-chart-2"></div>
 
 ## Adjusting the number of clusters using the elbow method
 
@@ -98,7 +102,7 @@ alt.renderers.enable('notebook')
 ```
 ![elbow-plot]({{ site.url }}{{ site.baseurl }}/charts/elbow.png)
 
-The graph of the first test
+It is hard to define the right 'elbow' in this graph, so instead of selecting manually, we will use an algorithm to identify the optinal number of clusters.
 
 ```python
 from kneed import KneeLocator
