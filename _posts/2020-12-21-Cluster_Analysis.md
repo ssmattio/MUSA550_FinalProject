@@ -22,6 +22,14 @@ MISSING EXPL OF VARIABLES CREATION
 
 MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
 
+## testing for autocorrelation
+
+missing text 
+
+<div id="heatmap_culsters"></div>
+
+missing text about pairs
+
 ## Initial Cluster analysis
 
 We first test the merged data using five clusters, while scaling the different variables:
