@@ -1,6 +1,6 @@
 ---
 title: "Cluster Analysis"
-date: 2019-04-17
+date: 2020-12-21
 published: true
 tags: [dataviz, matplotlib]
 excerpt: "This is an example blog post that embeds a matplotlib image."

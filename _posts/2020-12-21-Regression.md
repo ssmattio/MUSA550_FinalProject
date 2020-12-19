@@ -1,6 +1,6 @@
 ---
 title: "Regression"
-date: 2019-04-13
+date: 2020-12-21
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."

@@ -1,6 +1,6 @@
 ---
 title: "Case Study: New York State"
-date: 2019-04-13
+date: 2020-12-21
 published: true
 tags: [dataviz, folium]
 excerpt: "Embedding interactive Folium charts on static pages using Jekyll."
