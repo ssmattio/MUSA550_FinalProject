@@ -22,7 +22,24 @@ MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
 
 ## Initial Cluster analysis
 
-THE CODE! 
+We first test the merged data using 5 clusters, while scaling the different variables:
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+kmeans = KMeans(n_clusters=5)
+
+NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per','ind_const_per']])
+
+scaler = StandardScaler()
+
+kmeans.fit(NPS_census_scaled)
+
+NPS_census['label'] = kmeans.labels_
+
+alt.renderers.enable('notebook')
+```
 
 the plot of the chart with the colors and weights
 
