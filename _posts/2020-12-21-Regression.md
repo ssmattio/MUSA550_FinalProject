@@ -1,5 +1,5 @@
 ---
-title: "Regression"
+title: "Regression Analysis"
 date: 2020-12-21
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
@@ -13,28 +13,34 @@ toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/).
+Finally, the data was used in regression analysis to predict the number of NPS sites based on
+several indicators. This analysis uses the same dataset as the cluster analysis, which contains the
+NPS data joined with census data.
 
-## Altair Example
+## Selecting a Machine Learning Algorithm
 
-Below is a chart of the incidence of measles since 1928 for the 50 US states.
+For this analysis, Random Forest was used to avoid overfitting the model to our sample of points and
+because combining multiple numeric estimators can lead to a better, more accurate model. This model predicts
+the number of NPS sites in a state.
 
-<div id="altair-chart-1"></div>
 
-This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
+First the data was split 70/30 into training and test sets. Then, the indicators were checked for high
+correlation.
+
+![](charts/Regression_Correlation.jpg)
 
 ```python
 import altair as alt
 alt.renderers.enable('notebook')
 ```
 
-## Sara I am testing adding a chart here
+## Random Forest Algorithm
 
-this is an example of text 
+this is an example of text
 
 <div id="ilil-test-1"></div>
 
-this is an example of text 
+this is an example of text
 
 ## HvPlot Example
 
