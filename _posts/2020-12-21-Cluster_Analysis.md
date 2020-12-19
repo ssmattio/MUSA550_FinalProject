@@ -4,6 +4,8 @@ date: 2020-12-21
 published: true
 tags: [dataviz, matplotlib]
 excerpt: "This is an example blog post that embeds a matplotlib image."
+altair-loader:
+  altair-chart-1: "charts/heatmap_culsters.json"
 toc: false
 toc_sticky: false
 read_time: false
@@ -19,6 +21,14 @@ These added columns represent several assumptions that we wish to test:
 MISSING EXPL OF VARIABLES CREATION
 
 MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
+
+## testing for autocorrelation
+
+missing text 
+
+<div id="heatmap_culsters"></div>
+
+missing text about pairs
 
 ## Initial Cluster analysis
 
