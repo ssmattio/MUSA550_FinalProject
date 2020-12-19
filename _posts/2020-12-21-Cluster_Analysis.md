@@ -3,10 +3,14 @@ title: "Cluster Analysis"
 date: 2020-12-21
 published: true
 tags: [dataviz, matplotlib]
-excerpt: "This is an example blog post that embeds a matplotlib image."
+excerpt: "KMeans cluster analysis of NPS count per population, by state"
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
   altair-plot-1: "charts/plot1_clusters.json"
+  altair-map-1: "charts/map1_clusters.json"
+  altair-map-2: "charts/map2_clusters.json"
+hv-loader:
+  hv-chart-1: "charts/table_variables.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -19,17 +23,25 @@ These added columns represent several assumptions that we wish to test:
 
 ## Added variables from the ACS
 
-MISSING EXPL OF VARIABLES CREATION
+To the GDP variable that was added within the exploratory data part, we wish to add more variables that are census-based. 
+These veriables were selected since we assum possible correlation between them and the count of listing per population. 
+The variables are broad and cover race, income, and education. They are constructed from the original categories of the census:
 
-MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
+* % White = percent of white population within the state
+* % Unemployed = percent of unemployed from total in labor force
+* % population with higher degree = accosiate degree *or higher* from voting age population
+* % below poverty rate = HH income in the past 12 months below poverty rate 
+* % high income = HH with income of 150,000 and higher from all HH
 
-## testing for autocorrelation
+<div id="hv-chart-1"></div>
 
-missing text 
+## Testing for autocorrelation
+
+Now that we have both the count per population, the GDP and the census variables, we wish to test for autocorrelation between tha variables. We do so to avoid using too similar variables within our clustering analysis, with the threshold of .6 to guide us.
 
 <div id="altair-chart-1"></div>
 
-missing text about pairs
+As seen, the unemployment and the poverty variables are highly correlated, as well as the higher incom with higher education. We will choose one of each pair to use in our clustering analysis.
 
 ## Initial Cluster analysis
 
@@ -41,7 +53,7 @@ from sklearn.preprocessing import StandardScaler
 
 kmeans = KMeans(n_clusters=5)
 
-NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per','ind_const_per']])
+NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per']])
 
 scaler = StandardScaler()
 
@@ -55,17 +67,54 @@ The initial test leads to the dividion that is shown within this plot:
 
 <div id="altair-plot-1"></div>
 
-Additional expl on plot...
+The chart presents listings per population vs. the GDP of the last quarter of 2019. The color represents the five clusters that were created. 
 
+when mapping these clusters:
 
-The plot of the first map
+<div id="altair-map-1"></div>
+
+MISSING DISTRIBUITON TABLE!
 
 ## Adjusting the number of clusters using the elbow method
 
-an explanation of why
+an explanation of why we are doing this
+
+```python
+# Number of clusters to try out
+n_clusters = list(range(2, 20))
+
+# Run kmeans for each value of k
+inertias = []
+for k in n_clusters:
+
+    # Initialize and run
+    kmeans = KMeans(n_clusters=k)
+    kmeans.fit(NPS_census_scaled)
+
+    # Save the "inertia"
+    inertias.append(kmeans.inertia_)
+
+alt.renderers.enable('notebook')
+```
+![elbow-plot]({{ site.url }}{{ site.baseurl }}/charts/elbow.png)
 
 The graph of the first test
 
-the code to get the value
+```python
+from kneed import KneeLocator
+
+# Initialize the knee algorithm
+kn = KneeLocator(n_clusters, inertias, curve='convex', direction='decreasing')
+
+# Print out the knee 
+print(kn.knee)
+
+alt.renderers.enable('notebook')
+```
+The result is 7
 
 ## Adjusted Map of Clusters
+
+Using the optimal number of clusters, we are re-fitting the data and plotting the map:
+
+<div id="altair-map-2"></div>
