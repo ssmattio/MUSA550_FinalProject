@@ -68,12 +68,13 @@ The initial test leads to the dividion that is shown within this plot:
 <div id="altair-plot-1"></div>
 
 The chart presents listings per population vs. the GDP of the last quarter of 2019. The color represents the five clusters that were created. 
+We can see that when factoring the amount of population, the correlation appears to be negative. When reviewing only count vs. GDP, it display an opposit correlation.
 
 when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-MISSING DISTRIBUITON TABLE!
+MISSING DISTRIBUITON TABLE!!
 
 ## Adjusting the number of clusters using the elbow method
 
