@@ -57,7 +57,9 @@ scores = cross_val_score(
 )
 ```
 When the model is fit on the training data, the resulting score is -0.437. To better understand which features
-are most important in the model,
+are most important in the model, they are observed in the plot below, ranked by importance. By far, the strongest indicator
+for predicting the amount of NPS sites is population, followed by percent of population at the highest income level.
+population below the line of poverty.
 
 <div id="hv-chart-1"></div>
 
