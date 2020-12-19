@@ -5,10 +5,9 @@ published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
-  altair-chart-1: "charts/measlesAltair.json"
-  altair-chart-2: "charts/heatmap_culsters.json"
+  altair-chart-1: "charts/heatmap_culsters.json"
 hv-loader:
-  hv-chart-1: "charts/measlesHvplot.html"
+  hv-chart-1: "charts/Importance_Chart.html"
 toc: true
 toc_sticky: true
 ---
@@ -27,7 +26,7 @@ the number of NPS sites in a state.
 First the data was split 70/30 into training and test sets. Then, the indicators were checked for autocorrelation.
 As seen below, unemployment and poverty variables are highly correlated.
 
-<div id="altair-chart-2"></div>
+<div id="altair-chart-1"></div>
 
 Then, a baseline was established with a linear regression model using the code below.
 
@@ -38,14 +37,6 @@ linear_pipe = make_pipeline(StandardScaler(), LinearRegression())
 # Fit the pipeline
 print("Linear regression")
 linear_pipe.fit(X_train, y_train)
-
-# Print the training score
-training_score = linear_pipe.score(X_train, y_train)
-print(f"Training Score = {training_score}")
-
-# Print the test score
-test_score = linear_pipe.score(X_test, y_test)
-print(f"Test Score = {test_score}")
 ```
 
 The resulting training score is 0.755 and the resulting test score is 0.648. With this baseline
@@ -65,6 +56,10 @@ scores = cross_val_score(
     cv=10,
 )
 ```
+When the model is fit on the training data, the resulting score is -0.437. To better understand which features
+are most important in the model,
+
+<div id="hv-chart-1"></div>
 
 ## Testing the Model
 
