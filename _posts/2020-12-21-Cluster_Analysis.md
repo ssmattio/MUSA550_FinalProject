@@ -11,7 +11,6 @@ altair-loader:
   altair-map-2: "charts/map2_clusters.json"
 hv-loader:
   hv-chart-1: "charts/table_variables.html"
-  hv-chart-2: "charts/table2_dist.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -75,9 +74,7 @@ when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-this is the distribution of the clusters:
-
-<div id="hv-chart-2"></div>
+The distribution of states between clusters is unequal. There is only one state within the third group (District of Columbia), and three within the zero cluster.
 
 ## Adjusting the number of clusters using the elbow method
 
