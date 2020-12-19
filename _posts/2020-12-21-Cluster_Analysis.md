@@ -8,6 +8,7 @@ altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
   altair-plot-1: "charts/plot1_clusters.json"
   altair-map-1: "charts/map1_clusters.json"
+  altair-map-2: "charts/map2_clusters.json"
 toc: false
 toc_sticky: false
 read_time: false
@@ -100,10 +101,10 @@ print(kn.knee)
 
 alt.renderers.enable('notebook')
 ```
-The result is XXX
+The result is 7
 
 ## Adjusted Map of Clusters
 
 Using the optimal number of clusters, we are re-fitting the data and plotting the map:
 
-MISSING MAP
+<div id="altair-map-2"></div>
