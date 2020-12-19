@@ -17,10 +17,17 @@ MISSING EXPLANATION
 Cleaning the data expl.
 
 ```python
-def print_message(message):
-  print(message)
+NPS.Status.unique()
 
-print_message("Welcome to GitHub Pages")
+NPS['Status'].value_counts()
+
+NPS = NPS[NPS['Status']!='Removed']
+
+# remove NaNs
+NPS = NPS[NPS['geometry'].isna() != True]
+
+NPS_grped = NPS.groupby('State').count().reset_index()
+
 ```
 - count graph
 
