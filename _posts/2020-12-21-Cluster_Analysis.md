@@ -22,7 +22,7 @@ MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
 
 ## Initial Cluster analysis
 
-We first test the merged data using 5 clusters, while scaling the different variables:
+We first test the merged data using five clusters, while scaling the different variables:
 
 ```python
 from sklearn.cluster import KMeans
@@ -40,6 +40,7 @@ NPS_census['label'] = kmeans.labels_
 
 alt.renderers.enable('notebook')
 ```
+The initial test leads to the dividion that is shown within this plot: 
 
 the plot of the chart with the colors and weights
 
