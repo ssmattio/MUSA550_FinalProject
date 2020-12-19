@@ -30,7 +30,11 @@ alt.renderers.enable('notebook')
 
 ## Sara I am testing adding a chart here
 
+this is an example of text 
+
 <div id="ilil_test1"></div>
+
+this is an example of text 
 
 ## HvPlot Example
 
