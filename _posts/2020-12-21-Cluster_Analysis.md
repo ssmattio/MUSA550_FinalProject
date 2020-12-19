@@ -27,10 +27,11 @@ The variables are broad and cover race, income, and education. They are construc
 
 * % White = percent of white population within the state
 * % Unemployed = percent of unemployed from total in labor force
-* % Unemployed = percent of unemployed from total in labor force
 * % population with higher degree = accosiate degree *or higher* from voting age population
+* % below poverty rate = HH income in the past 12 months below poverty rate 
+* % high income = HH with income of 150,000 and higher from all HH
 
-MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
+MISSING CHART
 
 ## testing for autocorrelation
 
