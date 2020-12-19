@@ -13,9 +13,15 @@ toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium).
+To drill down further into the analysis of NPS sites, New York was selected as a case study. New York
+has one of the highest counts of NPS sites, making it an ideal case study.
 
 ## Distribution of NPS Sites in New York
+
+When analyzing the raw count of NPS sites, New York county exceeds all other counties with 499 sites. However,
+these counts can be misleading when considering population density. With a population of over 1.6 million, New York County's
+total number of listings per person is only 0.0003. Meanwhile, rural counties like Hamilton and Essex County have 0.004 and
+0.002 listings per person. The interactive maps below compare these two metrics. 
 
 <div id="altair-Total-sites"></div><div id="altair-Site-Per-Pop"></div>
 
