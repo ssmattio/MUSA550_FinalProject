@@ -6,6 +6,7 @@ tags: [dataviz, matplotlib]
 excerpt: "This is an example blog post that embeds a matplotlib image."
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
+  altair-plot-1: "charts/plot1_clusters.json"
 toc: false
 toc_sticky: false
 read_time: false
@@ -26,7 +27,7 @@ MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
 
 missing text 
 
-<div id="heatmap_culsters"></div>
+<div id="altair-chart-1"></div>
 
 missing text about pairs
 
@@ -52,7 +53,10 @@ alt.renderers.enable('notebook')
 ```
 The initial test leads to the dividion that is shown within this plot: 
 
-the plot of the chart with the colors and weights
+<div id="altair-plot-1"></div>
+
+Additional expl on plot...
+
 
 The plot of the first map
 
