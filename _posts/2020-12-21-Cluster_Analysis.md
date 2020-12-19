@@ -7,6 +7,7 @@ excerpt: "This is an example blog post that embeds a matplotlib image."
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
   altair-plot-1: "charts/plot1_clusters.json"
+  altair-map-1: "charts/map1_clusters.json"
 toc: false
 toc_sticky: false
 read_time: false
@@ -59,10 +60,9 @@ Additional expl on plot...
 
 when mapping these clusters:
 
+<div id="altair-map-1"></div>
 
-The plot of the first map
-
-the distrb. of it
+the distrb. of it?? MISSING
 
 ## Adjusting the number of clusters using the elbow method
 
