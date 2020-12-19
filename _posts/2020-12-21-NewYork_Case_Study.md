@@ -5,8 +5,8 @@ published: true
 tags: [dataviz, folium]
 excerpt: "Embedding interactive Folium charts on static pages using Jekyll."
 altair-loader:
-  altair-Site-Per-Pop: ["charts/NY_NPS_Site_Per_Pop_altair.json", "200"]
-  altair-Total-sites: ["charts/NY_NPS_Site_Count_altair.json", "200"]
+  altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
+  altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
 folium-loader:
   folium-chart-2: ["charts/percent_no_internet.html", "400"]
 toc: true
