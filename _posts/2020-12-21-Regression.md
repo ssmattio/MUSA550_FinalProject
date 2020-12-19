@@ -6,7 +6,7 @@ tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart-1: "charts/measlesAltair.json"
-  ilil-test-1: "charts/myOutputChart1.json"
+  altair-chart-2: "charts/heatmap_culsters.json"
 hv-loader:
   hv-chart-1: "charts/measlesHvplot.html"
 toc: true
@@ -24,14 +24,46 @@ because combining multiple numeric estimators can lead to a better, more accurat
 the number of NPS sites in a state.
 
 
-First the data was split 70/30 into training and test sets. Then, the indicators were checked for high
-correlation.
+First the data was split 70/30 into training and test sets. Then, the indicators were checked for autocorrelation.
+As seen below, unemployment and poverty variables are highly correlated.
 
-![Correlation](charts/Regression_Correlation.JPG)
+<div id="altair-chart-2"></div>
+
+Then, a baseline was established with a linear regression model using the code below.
 
 ```python
-import altair as alt
-alt.renderers.enable('notebook')
+# Linear model pipeline with two steps
+linear_pipe = make_pipeline(StandardScaler(), LinearRegression())
+
+# Fit the pipeline
+print("Linear regression")
+linear_pipe.fit(X_train, y_train)
+
+# Print the training score
+training_score = linear_pipe.score(X_train, y_train)
+print(f"Training Score = {training_score}")
+
+# Print the test score
+test_score = linear_pipe.score(X_test, y_test)
+print(f"Test Score = {test_score}")
+```
+
+The resulting training score is 0.755 and the resulting test score is 0.648. With this baseline
+established, the random forest model pipeline can now be created.
+
+```python
+# Make a random forest pipeline
+forest_pipeline = make_pipeline(
+    StandardScaler(), RandomForestRegressor(n_estimators=100, random_state=42)
+)
+
+# Run the 10-fold cross validation
+scores = cross_val_score(
+    forest_pipeline,
+    X_train,
+    y_train,
+    cv=10,
+)
 ```
 
 ## Testing the Model
