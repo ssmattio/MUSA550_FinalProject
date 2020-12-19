@@ -11,7 +11,6 @@ altair-loader:
   altair-map-2: "charts/map2_clusters.json"
 hv-loader:
   hv-chart-1: "charts/table_variables.html"
-  hv-chart-2: "charts/table2_dist.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -75,9 +74,7 @@ when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-this is the distribution of the clusters:
-
-<div id="hv-chart-2"></div>
+The distribution of states between clusters is unequal. There is only one state within the third group (District of Columbia), and three within the zero cluster.
 
 ## Adjusting the number of clusters using the elbow method
 
@@ -116,10 +113,15 @@ print(kn.knee)
 
 alt.renderers.enable('notebook')
 ```
-The result is 7
+The algorithm result is seven. 
 
 ## Adjusted Map of Clusters
 
 Using the optimal number of clusters, we are re-fitting the data and plotting the map:
 
 <div id="altair-map-2"></div>
+
+Altough the number of clusters increased, the District of Columbia is still within the smallest cluster (the only value within it). 
+It is not suprising consider the high amount of population and monuments within it, that sets it apart from the rest. 
+
+Since this clustering method does not account for spatial attributes, it is interesting to see where on one hand, neighboring states are within the same clusters, and on the other some clusters are spread throughout the US.
