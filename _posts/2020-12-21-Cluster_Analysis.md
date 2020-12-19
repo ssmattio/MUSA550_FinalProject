@@ -9,6 +9,8 @@ altair-loader:
   altair-plot-1: "charts/plot1_clusters.json"
   altair-map-1: "charts/map1_clusters.json"
   altair-map-2: "charts/map2_clusters.json"
+hv-loader:
+  hv-chart-1: "charts/table_variables.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -31,13 +33,13 @@ The variables are broad and cover race, income, and education. They are construc
 * % below poverty rate = HH income in the past 12 months below poverty rate 
 * % high income = HH with income of 150,000 and higher from all HH
 
-MISSING CHART
+<div id="altair-plot-1"></div>
 
 ## testing for autocorrelation
 
 missing text 
 
-<div id="altair-chart-1"></div>
+<div id="hv-chart-1"></div>
 
 missing text about pairs
 
