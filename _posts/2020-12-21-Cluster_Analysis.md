@@ -66,10 +66,43 @@ the distrb. of it?? MISSING
 
 ## Adjusting the number of clusters using the elbow method
 
-an explanation of why
+an explanation of why we are doing this
+
+```python
+# Number of clusters to try out
+n_clusters = list(range(2, 20))
+
+# Run kmeans for each value of k
+inertias = []
+for k in n_clusters:
+
+    # Initialize and run
+    kmeans = KMeans(n_clusters=k)
+    kmeans.fit(NPS_census_scaled)
+
+    # Save the "inertia"
+    inertias.append(kmeans.inertia_)
+
+alt.renderers.enable('notebook')
+```
 
 The graph of the first test
 
-the code to get the value
+```python
+from kneed import KneeLocator
+
+# Initialize the knee algorithm
+kn = KneeLocator(n_clusters, inertias, curve='convex', direction='decreasing')
+
+# Print out the knee 
+print(kn.knee)
+
+alt.renderers.enable('notebook')
+```
+The result is XXX
 
 ## Adjusted Map of Clusters
+
+Using the optimal number of clusters, we are re-fitting the data and plotting the map:
+
+MISSING MAP
