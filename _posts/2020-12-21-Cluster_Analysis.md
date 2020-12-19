@@ -85,6 +85,7 @@ for k in n_clusters:
 
 alt.renderers.enable('notebook')
 ```
+![alt-text]({{ site.url }}{{ site.baseurl }}/charts/elbow.png
 
 The graph of the first test
 
