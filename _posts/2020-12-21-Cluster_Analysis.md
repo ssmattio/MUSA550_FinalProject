@@ -35,7 +35,7 @@ The variables are broad and cover race, income, and education. They are construc
 
 <div id="hv-chart-1"></div>
 
-## testing for autocorrelation
+## Testing for autocorrelation
 
 Now that we have both the count per population, the GDP and the census variables, we wish to test for autocorrelation between tha variables. We do so to avoid using too similar variables within our clustering analysis, with the threshold of .6 to guide us.
 
