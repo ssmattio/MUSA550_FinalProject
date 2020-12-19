@@ -81,7 +81,8 @@ this is the distribution of the clusters:
 
 ## Adjusting the number of clusters using the elbow method
 
-an explanation of why we are doing this
+We started by randomally choosing five clusters, but it is possible that the optimal amount of clusters is smaller or higher than that.
+So, we will try to identify the optimal amount and fit our clustering analysis again according to the result. 
 
 ```python
 # Number of clusters to try out
