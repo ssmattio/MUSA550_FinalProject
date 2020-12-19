@@ -4,6 +4,8 @@ date: 2020-12-21
 published: true
 tags: [dataviz, matplotlib]
 excerpt: "This is an example blog post that embeds a matplotlib image."
+altair-loader:
+  altair-chart-1: "charts/heatmap_culsters.json"
 toc: false
 toc_sticky: false
 read_time: false
