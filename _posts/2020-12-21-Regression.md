@@ -27,14 +27,14 @@ the number of NPS sites in a state.
 First the data was split 70/30 into training and test sets. Then, the indicators were checked for high
 correlation.
 
-![Correlation](charts/Regression_Correlation.jpg)
+![Correlation](charts/Regression_Correlation.JPG)
 
 ```python
 import altair as alt
 alt.renderers.enable('notebook')
 ```
 
-## Random Forest Algorithm
+## Testing the Model
 
 this is an example of text
 
@@ -42,7 +42,7 @@ this is an example of text
 
 this is an example of text
 
-## HvPlot Example
+## Results
 
 Lastly, the measles incidence produced using the HvPlot package:
 
