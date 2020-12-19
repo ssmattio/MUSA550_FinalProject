@@ -11,6 +11,7 @@ altair-loader:
   altair-map-2: "charts/map2_clusters.json"
 hv-loader:
   hv-chart-1: "charts/table_variables.html"
+  hv-chart-2: "charts/table2_dist.html"
 toc: false
 toc_sticky: false
 read_time: false
@@ -74,7 +75,9 @@ when mapping these clusters:
 
 <div id="altair-map-1"></div>
 
-MISSING DISTRIBUITON TABLE!!
+this is the distribution of the clusters:
+
+<div id="hv-chart-2"></div>
 
 ## Adjusting the number of clusters using the elbow method
 
