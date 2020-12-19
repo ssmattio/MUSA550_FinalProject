@@ -28,6 +28,8 @@ missing text
 
 <div id="heatmap_culsters"></div>
 
+- this is not working and I am not sure why...
+
 missing text about pairs
 
 ## Initial Cluster analysis
