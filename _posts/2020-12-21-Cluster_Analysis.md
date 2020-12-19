@@ -21,7 +21,14 @@ These added columns represent several assumptions that we wish to test:
 
 ## Added variables from the ACS
 
-MISSING EXPL OF VARIABLES CREATION
+After adding the GDP data for the exploratory part, we wish to add more variables that are census-based. 
+These veriables were selected since we assum possible correlation between them and the count of listing per population. 
+The variables are broad and cover race, income, and education. They are constructed from the original categories of the census:
+
+* % White = percent of white population within the state
+* % Unemployed = percent of unemployed from total in labor force
+* % Unemployed = percent of unemployed from total in labor force
+* % population with higher degree = accosiate degree *or higher* from voting age population
 
 MISSING VARIABLES TABLE -> TO BE CREATED WITH MATPLOTLIB?
 
