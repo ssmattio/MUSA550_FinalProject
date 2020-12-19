@@ -102,7 +102,7 @@ alt.renderers.enable('notebook')
 ```
 ![elbow-plot]({{ site.url }}{{ site.baseurl }}/charts/elbow.png)
 
-The graph of the first test
+It is hard to define the right 'elbow' in this graph, so instead of selecting manually, we will use an algorithm to identify the optinal number of clusters.
 
 ```python
 from kneed import KneeLocator
