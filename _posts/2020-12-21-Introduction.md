@@ -3,6 +3,8 @@ title: "Project Introduction"
 date: 2020-12-21
 categories:
   - blog
+altair-loader:
+  altair-chart-1: "charts/myOutputChart1.json"
 tags:
   - Github Page
   - update
@@ -34,7 +36,9 @@ NPS = NPS[NPS['geometry'].isna() != True]
 NPS_grped = NPS.groupby('State').count().reset_index()
 
 ```
-- count graph
+expl. of graph: 
+
+<div id="altair-chart-1"></div>
 
 - count per population graph
 
