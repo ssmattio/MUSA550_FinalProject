@@ -53,7 +53,7 @@ from sklearn.preprocessing import StandardScaler
 
 kmeans = KMeans(n_clusters=5)
 
-NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per','ind_const_per']])
+NPS_census_scaled = scaler.fit_transform(NPS_census[['LISTINGS_PER_POP','GDP_2019_4Q','white_per','BelowPoverty_per','Above150_inc_per']])
 
 scaler = StandardScaler()
 
