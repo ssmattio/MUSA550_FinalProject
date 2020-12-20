@@ -8,6 +8,8 @@ altair-loader:
   altair-NY-1: "charts/NY_NPS_Site_Count_altair2.json"
   altair-NY-2: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-map-panel: "charts/sixmap.json"
+  NY-results: "charts/NY_Predicted_vs_Actual_map.json"
+  PE: "charts/NY_PE_map.json"
 toc: false
 toc_sticky: false
 ---
@@ -35,3 +37,9 @@ may serve as a strong indicator.
 
 ## Applying the Random Forest Algorithm
 The results below show the outcome of applying the model at a smaller scale.
+
+<div id ="NY-Results"></div>
+
+Then, percent error.
+
+<div id ="PE"></div>
