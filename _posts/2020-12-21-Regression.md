@@ -77,6 +77,11 @@ The maps above shows the actual count of NPS sites by state, compared to the pre
 for most states, except Arkansas, Ohio, and Massachusetts. In these cases, the model overpredicted the count, predicting site counts
 that were higher than the actual counts.
 
-Next, the percent error of each state is mapped out.
+Next, the percent error of each state is mapped out. The distribution of high errors shows that the model is better at predicting states
+with a higher population and population density. States like Nevada, Arkansas, Montana, and Ohio had much larger errors.
 
 <div id="altair-chart-3"></div>
+
+## Next Steps
+Now that the model has been applied at a national scale, it can be tested at a more local level with state data. The next page provides
+a case study using the model for New York state. 
