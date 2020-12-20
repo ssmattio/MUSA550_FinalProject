@@ -23,7 +23,7 @@ Before constructing a model to NY, we wish to understand the historic growth of 
 
 <div id="altair-years"></div>
 
-In the charts above we can see that the number of listings grew quite steadily between the decades, with the 1980s and the 2000s years expiriencing the largest growth in historic listings.
+In the charts above we can see that the number of listings grew quite steadily between the decades, with the 1980s and the 2000s years experiencing the largest growth in historic listings.
 
 ## Distribution of NPS Sites in New York and Key Indicators
 
@@ -43,10 +43,15 @@ may serve as a strong indicator.
 
 
 ## Applying the Random Forest Algorithm
-The results below show the outcome of applying the model at a smaller scale.
+The results below show the outcome of applying the model at a smaller scale. Unlike at the national level, the model seems to have
+underpredicted in some counties, such as Dutchess and Richmond counties.
 
 <div id ="NY-Results"></div>
 
-Then, percent error.
+When observing the percent error of predictions, the results in New York State are similar to results at a national level. Areas that
+have a rural, smaller population tend to have higher errors.
 
 <div id ="PE"></div>
+
+Further refinement of the model could be done to predict NPS counts in New York. Finding indicators that are more significant at a local scale
+rather than a national scale may improve the model.
