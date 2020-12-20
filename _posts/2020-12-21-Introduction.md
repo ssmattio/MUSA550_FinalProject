@@ -69,8 +69,8 @@ While the charts we reviewed so far are informative, we wish to map these three 
 
 <div id="altair-map"></div>
 
-Missing text about the map and the difference of choosing each for our dependetqprimary variable
+We can see how the values dramaticly varies from one way to another. We can say that the northen-east part of the US remains relitivly high in all three maps, but a closer examination reveales that even within this area, the high-value states are shifting. Nonetheless, Massachusetts exhibit relitivly high values throughout the three maps. 
 
-## next steps
+## Next steps
 
 In the next links, we will create clusters of the dataset, as well as a regression model to try and predict the accumulative values. We will then zoom-in to review a county-scale of the count to NY, and test our regression model on this case-study.
