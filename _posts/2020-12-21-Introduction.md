@@ -56,6 +56,8 @@ It is important to understand the difference. In later stages, we will work with
 We reviewed the initial data, and tested it with comparison to population and size. Now, we will introduce another variable into our data: GDP. 
 The GDP is published by yearly quarters. Although we are at the end of 2020, given the turmoil state of the past year, we chose to use the forth quarter of 2019 (back when we could walk without face-masks), assuming the economy was more stable back then.
 
+The values are taken from https://www.bea.gov/data/gdp/gdp-state (excel chart).
+
 We then tested these values in comparison to the count:
 
 <div id="altair-chart-3"></div>
