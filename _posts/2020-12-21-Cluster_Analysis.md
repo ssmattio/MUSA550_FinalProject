@@ -1,6 +1,6 @@
 ---
 title: "Cluster Analysis"
-date: 2020-12-19
+date: 2020-12-20
 published: true
 tags: [dataviz, matplotlib]
 excerpt: "KMeans cluster analysis of NPS count per population, by state"
