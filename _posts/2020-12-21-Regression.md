@@ -50,13 +50,18 @@ forest_pipeline = make_pipeline(
     StandardScaler(), RandomForestRegressor(n_estimators=100, random_state=42)
 )
 
-# Run the 10-fold cross validation
-scores = cross_val_score(
-    forest_pipeline,
-    X_train,
-    y_train,
-    cv=10,
-)
+# making predictions:
+model_name = "randomforestregressor"
+param_grid = {
+    f"{model_name}__n_estimators": [5, 10, 15, 20, 30],
+    f"{model_name}__max_depth": [None, 2, 5, 7, 9, 13],
+}
+
+# Create the grid and use 5-fold CV
+grid = GridSearchCV(pipe, param_grid, cv=5)
+
+# Run the search
+grid.fit(train_set, y_train);
 ```
 When the model is fit on the training data, the resulting score is 0.3947. This score is much stronger
 than the baseline score, indicating that the model is a better fit. To better understand which features
@@ -84,4 +89,4 @@ with a higher population and population density. States like Nevada, Arkansas, M
 
 ## Next Steps
 Now that the model has been applied at a national scale, it can be tested at a more local level with state data. The next page provides
-a case study using the model for New York state. 
+a case study using the model for New York state.
