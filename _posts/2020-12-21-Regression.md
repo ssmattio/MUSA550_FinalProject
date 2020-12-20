@@ -39,8 +39,8 @@ print("Linear regression")
 linear_pipe.fit(X_train, y_train)
 ```
 
-The resulting training score is 0.755 and the resulting test score is 0.648. With this baseline
-established, the random forest model pipeline can now be created.
+The resulting test score is 0.1042. With this (low) baseline established, the
+random forest model pipeline can now be created.
 
 ```python
 # Make a random forest pipeline
@@ -56,15 +56,18 @@ scores = cross_val_score(
     cv=10,
 )
 ```
-When the model is fit on the training data, the resulting score is -0.437. To better understand which features
-are most important in the model, they are observed in the plot below, ranked by importance. By far, the strongest indicator
+When the model is fit on the training data, the resulting score is 0.3947. This score is much stronger
+than the baseline score, indicating that the model is a better fit. To better understand which features
+are the strongest and most important to the model, they are then plotted and ranked by importance. By far, the strongest indicator
 for predicting the amount of NPS sites is population, followed by percent of population at the highest income level.
-population below the line of poverty.
+This indicates that states with higher income and a higher amount of people are more likely to have a higher amount
+of NPS sites, while low-income, low-population states are likely to have fewer sites. Given that the states with the
+highest amount of NPS sites are California and New York, the model appears to be predicting accurately.
 
 <div id="hv-chart-1"></div>
 
-## Testing the Model
 
 
+Plot Std Dev by state - where was it strongest?
 
 ## Results
