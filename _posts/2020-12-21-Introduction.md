@@ -5,6 +5,8 @@ categories:
   - blog
 altair-loader:
   altair-chart-1: "charts/myOutputChart1.json"
+  altair-chart-2: "charts/myOutputChart2.json"
+
 tags:
   - Github Page
   - update
@@ -37,11 +39,11 @@ NPS = NPS[NPS['geometry'].isna() != True]
 NPS_grped = NPS.groupby('State').count().reset_index()
 
 ```
-expl. of graph: 
-
 <div id="altair-chart-1"></div>
+explaining the graph and the top value MISSING
 
-- count per population graph
+<div id="altair-chart-2"></div>
+explaining the graph and the top value, hoe NY shifted MISSING
 
 - count per area graph
 
