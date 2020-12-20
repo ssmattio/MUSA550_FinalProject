@@ -7,7 +7,7 @@ excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
-  altair-map-panel: "NY_demographic_data.json"
+  altair-map-panel: "charts/NY_demographic_data.json"
 toc: false
 toc_sticky: false
 ---
@@ -28,6 +28,7 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 The maps below show other demographic indicators that will be used in the regression.
 
 <div id="altair-map-panel"></div>
+
 
 
 
