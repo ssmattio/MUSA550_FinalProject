@@ -28,8 +28,4 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 
 
 
-## Percentage of Households without Internet
-
-<div id="folium-chart-2"></div>
-
-See the [lecture 9B slides](https://musa-550-fall-2020.github.io/slides/lecture-9B.html) and the [lecture 10A slides](https://musa-550-fall-2020.github.io/slides/lecture-10A.html) for the code that produced these plots.
+## Applying the Random Forest Algorithm
