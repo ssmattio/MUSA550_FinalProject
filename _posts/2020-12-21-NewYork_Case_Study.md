@@ -9,6 +9,8 @@ altair-loader:
   altair-NY-2: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-map-panel: "charts/sixmap.json"
   altair-years: "charts/NYyears.json"
+  NY-Results: "charts/NY_Predicted_vs_Actual_map.json"
+  PE: "charts/NY_PE_map.json"
 toc: false
 toc_sticky: false
 ---
