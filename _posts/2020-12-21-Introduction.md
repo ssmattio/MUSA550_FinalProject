@@ -5,6 +5,7 @@ categories:
   - blog
 altair-loader:
   altair-chart-1: "charts/allC.json"
+  altair-chart-2: "charts/outputC4.json"
   altair-chart-3: "charts/GDP_chart.json"
   altair-map: "charts/maps_intro.json"
 
@@ -40,12 +41,16 @@ NPS = NPS[NPS['geometry'].isna() != True]
 NPS_grped = NPS.groupby('State').count().reset_index()
 
 ```
+After cleaning and grouping the initial data, we can now review the status per state, with three different measurement ways:
+
 <div id="altair-chart-1"></div>
-explaining the graph and the top value MISSING
 
 We can see that the count per area is schewed because of the District of Columbia. We will review it again, ommiting the District:
 
-MISSING ADDITIONAL PLOT
+<div id="altair-chart-2"></div>
+
+The three measurments provide a different results. When simply counting the number of listing, NY state is on top, but when factoring the population size and the area, NY shifts lower in the ranking, while places such as South Dacota (population) or District of Columbia and Rhode Island gain prominance. 
+It is important to understand the difference. In later stages, we will work with the count per population and with the simple count to construct different models. While the count per area is important, we will not explore it further in the project. When reviewing the count per population, we need to keep in mind that states' population is a dynamic figure that changed dramatically over the years. While the listings are aggregated up to 2020, a further review of listings vs. population over time is recommended to future work. 
 
 ## Adding GDP variable
 
