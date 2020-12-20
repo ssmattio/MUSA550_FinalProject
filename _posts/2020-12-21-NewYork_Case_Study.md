@@ -2,7 +2,7 @@
 title: "Case Study: New York State"
 date: 2020-12-21
 published: true
-tags: [dataviz, folium]
+tags: [New York, hvplot, Machine Learning]
 excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
