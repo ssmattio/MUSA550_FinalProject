@@ -6,6 +6,8 @@ tags: [Machine Learning, altair, hvplot, Random Forest]
 excerpt: "Predicting the amount of NPS sites with machine learning."
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
+  altair-chart-2: "charts/Predicted_vs_Actual_map.json"
+  altair-chart-3: "charts/Percent_Error.json"
 hv-loader:
   hv-chart-1: "charts/Importance_Chart.html"
 toc: false
@@ -67,6 +69,14 @@ highest amount of NPS sites are California and New York, the model appears to be
 <div id="hv-chart-1"></div>
 
 
-
 ## Results
-The map below shows the actual count of NPS sites by state, compared to the predicted values of the model. 
+
+<div id="altair-chart-2"></div>
+
+The maps above shows the actual count of NPS sites by state, compared to the predicted values of the model. The model predicts well
+for most states, except Arkansas, Ohio, and Massachusetts. In these cases, the model overpredicted the count, predicting site counts
+that were higher than the actual counts.
+
+Next, the percent error of each state is mapped out.
+
+<div id="altair-chart-3"></div>
