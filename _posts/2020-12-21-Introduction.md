@@ -4,8 +4,7 @@ date: 2020-12-21
 categories:
   - blog
 altair-loader:
-  altair-chart-1: "charts/myOutputChart1.json"
-  altair-chart-2: "charts/myOutputChart2.json"
+  altair-chart-1: "charts/allC.json"
   altair-chart-3: "charts/GDP_chart.json"
   altair-map: "charts/maps_intro.json"
 
@@ -44,10 +43,9 @@ NPS_grped = NPS.groupby('State').count().reset_index()
 <div id="altair-chart-1"></div>
 explaining the graph and the top value MISSING
 
-<div id="altair-chart-2"></div>
-explaining the graph and the top value, hoe NY shifted MISSING
+We can see that the count per area is schewed because of the District of Columbia. We will review it again, ommiting the District:
 
-- count per area graph
+MISSING ADDITIONAL PLOT
 
 ## Adding GDP variable
 
