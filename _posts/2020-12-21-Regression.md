@@ -2,14 +2,14 @@
 title: "Regression Analysis"
 date: 2020-12-21
 published: true
-tags: [dataviz, altair, hvplot, holoviews]
+tags: [Machine Learning, altair, hvplot, Random Forest]
 excerpt: "Predicting the amount of NPS sites with machine learning."
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
 hv-loader:
   hv-chart-1: "charts/Importance_Chart.html"
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 ---
 
 Finally, the data was used in regression analysis to predict the number of NPS sites based on
@@ -68,6 +68,5 @@ highest amount of NPS sites are California and New York, the model appears to be
 
 
 
-Plot Std Dev by state - where was it strongest?
-
 ## Results
+The map below shows the actual count of NPS sites by state, compared to the predicted values of the model. 

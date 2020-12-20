@@ -7,6 +7,7 @@ excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
+  altair-map-panel: "NY_demographic_data.json"
 toc: false
 toc_sticky: false
 ---
@@ -20,9 +21,13 @@ the model's strength at both a national and local level.
 When analyzing the raw count of NPS sites, New York county exceeds all other counties with 499 sites. However,
 these counts can be misleading when considering population density. With a population of over 1.6 million, New York County's
 total number of listings per person is only 0.0003. Meanwhile, rural counties like Hamilton and Essex County have 0.004 and
-0.002 listings per person. The interactive maps below compare these two metrics.
+0.002 listings per person. The maps below compare these two metrics.
 
 <div id="altair-Total-sites"></div><div id="altair-Site-Per-Pop"></div>
+
+The maps below show other demographic indicators that will be used in the regression.
+
+<div id="altair-map-panel"></div><div id="altair-map-panel"></div>
 
 
 
