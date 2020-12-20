@@ -7,6 +7,7 @@ altair-loader:
   altair-chart-1: "charts/myOutputChart1.json"
   altair-chart-2: "charts/myOutputChart2.json"
   altair-chart-3: "charts/GDP_chart.json"
+  altair-map: "charts/maps_intro.json"
 
 tags:
   - Github Page
@@ -58,7 +59,9 @@ missing expl.
 
 ## Exploratory maps of results
 
-MISSING MAPS
+<div id="altair-map"></div>
+
+Missing text about the map and the difference of choosing each for our dependetqprimary variable
 
 ## next steps
 
