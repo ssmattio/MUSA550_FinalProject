@@ -25,7 +25,8 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 
 <div id="altair-Total-sites"></div><div id="altair-Site-Per-Pop"></div>
 
-The maps below show other demographic indicators that will be used in the regression.
+The maps below show other demographic indicators that will be used in the regression. Areas with a higher percentage of the population
+with a degree appear to align with counties with higher counts of NPS sites, as well as areas with a higher population.
 
 <div id="altair-map-panel"></div>
 
