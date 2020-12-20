@@ -7,10 +7,8 @@ excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
-folium-loader:
-  folium-chart-2: ["charts/percent_no_internet.html", "400"]
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 ---
 
 To drill down further into the analysis of NPS sites, it is useful to apply the model at a smaller
