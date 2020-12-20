@@ -27,14 +27,15 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 <div id="altair-Total-sites"></div><div id="altair-Site-Per-Pop"></div>
 
 The maps below show other demographic indicators that will be used in the regression. Areas with a higher percentage of the population
-with a degree appear to align with counties with higher counts of NPS sites, as well as areas with a higher population.
+with a degree appear to align with counties with higher counts of NPS sites, as well as areas with a higher population. The three variables
+below seem to be strong indicators for NY sites.
 
 <div id="altair-map-panel1"></div>
 
-The second series of indicators show economic indicators. 
+The second series of indicators show economic indicators. Areas with higher rates of poverty also tend to have higher rates of unemployment. These
+areas also have lower counts of NPS sites, leading to the conclusion that it may serve as a strong indicator.
 
 <div id="altair-map-panel2"></div>
-
 
 
 ## Applying the Random Forest Algorithm
