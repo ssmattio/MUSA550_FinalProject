@@ -5,7 +5,8 @@ published: true
 tags: [New York, hvplot, Machine Learning]
 excerpt: "Applying the model at a more granular level"
 altair-loader:
-  altair-NY-Compare: "charts/NY_Compare.json"
+  altair-NY-1: "charts/NY_NPS_Site_Count_altair2.json"
+  altair-NY-2: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-map-panel: "charts/sixmap.json"
 toc: false
 toc_sticky: false
@@ -22,7 +23,7 @@ these counts can be misleading when considering population density. With a popul
 total number of listings per person is only 0.0003. Meanwhile, rural counties like Hamilton and Essex County have 0.004 and
 0.002 listings per person. The maps below compare these two metrics.
 
-<div id="altair-NY-Compare"></div>
+<div id="altair-NY-1"></div><div id="altair-NY-2"></div>
 
 The maps below show other demographic indicators that will be used in the regression. Areas with a higher percentage of the population
 with a degree appear to align with counties with higher counts of NPS sites, as well as areas with a higher population. The three variables
