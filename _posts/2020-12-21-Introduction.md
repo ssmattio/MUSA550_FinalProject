@@ -6,6 +6,7 @@ categories:
 altair-loader:
   altair-chart-1: "charts/myOutputChart1.json"
   altair-chart-2: "charts/myOutputChart2.json"
+  altair-chart-3: "charts/GDP_chart.json"
 
 tags:
   - Github Page
@@ -49,9 +50,11 @@ explaining the graph and the top value, hoe NY shifted MISSING
 
 ## Adding GDP variable
 
-Adding the GDP and plotting :
+Adding the GDP and plotting : MISSING TEXT
 
-GRAPH MISSING
+<div id="altair-chart-3"></div>
+
+missing expl.
 
 ## Exploratory maps of results
 
