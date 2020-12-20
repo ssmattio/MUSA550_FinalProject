@@ -27,7 +27,7 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 
 The maps below show other demographic indicators that will be used in the regression.
 
-<div id="altair-map-panel"></div><div id="altair-map-panel"></div>
+<div id="altair-map-panel"></div>
 
 
 
