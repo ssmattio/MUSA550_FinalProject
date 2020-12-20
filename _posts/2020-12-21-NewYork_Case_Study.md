@@ -6,7 +6,7 @@ tags: [New York, hvplot, Machine Learning]
 excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
-  altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
+  altair-Total-sites: "charts/NY_NPS_Site_Count_altair2.json"
   altair-map-panel: "charts/NY_demographic_data.json"
 toc: false
 toc_sticky: false
@@ -34,3 +34,4 @@ with a degree appear to align with counties with higher counts of NPS sites, as 
 
 
 ## Applying the Random Forest Algorithm
+The results below show the outcome of applying the model at a smaller scale.
