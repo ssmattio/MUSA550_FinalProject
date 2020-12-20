@@ -9,7 +9,7 @@ altair-loader:
   altair-chart-3: "charts/GDP_chart.json"
   altair-map: "charts/maps_intro.json"
   
-  need_slider: "charts/myOutputChart1.json"
+  need_slider: "charts/test.json"
 
 tags:
   - Github Page
