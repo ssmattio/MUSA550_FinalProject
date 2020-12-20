@@ -1,6 +1,6 @@
 ---
 title: "Case Study: New York State"
-date: 2020-12-21
+date: 2020-12-18
 published: true
 tags: [New York, hvplot, Machine Learning]
 excerpt: "Applying the model at a more granular level"
