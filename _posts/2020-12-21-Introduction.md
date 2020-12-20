@@ -54,13 +54,18 @@ It is important to understand the difference. In later stages, we will work with
 
 ## Adding GDP variable
 
-Adding the GDP and plotting : MISSING TEXT
+We reviewed the initial data, and tested it with comparison to population and size. Now, we will introduce another variable into our data: GDP. 
+The GDP is published by yearly quarters. Although we are at the end of 2020, given the turmoil state of the past year, we chose to use the forth quarter of 2019 (back when we could walk without face-masks), assuming the economy was more stable back then.
+
+We then tested these values in comparison to the count:
 
 <div id="altair-chart-3"></div>
 
-missing expl.
+There seems to be a positive correlation between GDP and historic listing count. In later pages, we will present how this variable is in comparison to count per area. 
 
 ## Exploratory maps of results
+
+While the charts we reviewed so far are informative, we wish to map these three measurments to see their spatial distribution across the US: 
 
 <div id="altair-map"></div>
 
