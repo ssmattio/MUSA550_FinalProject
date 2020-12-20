@@ -3,7 +3,7 @@ title: "Case Study: New York State"
 date: 2020-12-21
 published: true
 tags: [dataviz, folium]
-excerpt: "Embedding interactive Folium charts on static pages using Jekyll."
+excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-Total-sites: "charts/NY_NPS_Site_Count_altair.json"
@@ -13,8 +13,9 @@ toc: true
 toc_sticky: true
 ---
 
-To drill down further into the analysis of NPS sites, New York was selected as a case study. New York
-has one of the highest counts of NPS sites, making it an ideal case study.
+To drill down further into the analysis of NPS sites, it is useful to apply the model at a smaller
+scale. New York has one of the highest counts of NPS sites, making it an ideal case study to determine
+the model's strength at both a national and local level.
 
 ## Distribution of NPS Sites in New York and Key Indicators
 

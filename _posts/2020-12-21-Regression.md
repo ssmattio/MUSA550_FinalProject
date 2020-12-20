@@ -3,7 +3,7 @@ title: "Regression Analysis"
 date: 2020-12-21
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
-excerpt: "Embedding interactive charts on static pages using Jekyll."
+excerpt: "Predicting the amount of NPS sites with machine learning."
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
 hv-loader:
