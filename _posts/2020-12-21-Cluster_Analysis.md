@@ -2,7 +2,7 @@
 title: "Cluster Analysis"
 date: 2020-12-20
 published: true
-tags: [dataviz, matplotlib]
+tags: [altair]
 excerpt: "KMeans cluster analysis of NPS count per population, by state"
 altair-loader:
   altair-chart-1: "charts/heatmap_culsters.json"
