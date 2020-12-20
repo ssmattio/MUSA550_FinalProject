@@ -2,16 +2,15 @@
 title: "Project Introduction"
 date: 2020-12-21
 categories:
-  - blog
+  - Introduction
 altair-loader:
   altair-chart-1: "charts/allC.json"
   altair-chart-2: "charts/outputC4.json"
   altair-chart-3: "charts/GDP_chart.json"
   altair-map: "charts/maps_intro.json"
-
 tags:
   - Github Page
-  - update
+
 ---
 
 ## NPS listings
