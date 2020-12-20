@@ -7,7 +7,8 @@ excerpt: "Applying the model at a more granular level"
 altair-loader:
   altair-Site-Per-Pop: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-Total-sites: "charts/NY_NPS_Site_Count_altair2.json"
-  altair-map-panel: "charts/NY_demographic_data.json"
+  altair-map-panel1: "charts/NY_demographic_data_1.json"
+  altair-map-panel2: "charts/NY_demographic_data_2.json"
 toc: false
 toc_sticky: false
 ---
@@ -28,8 +29,11 @@ total number of listings per person is only 0.0003. Meanwhile, rural counties li
 The maps below show other demographic indicators that will be used in the regression. Areas with a higher percentage of the population
 with a degree appear to align with counties with higher counts of NPS sites, as well as areas with a higher population.
 
-<div id="altair-map-panel"></div>
+<div id="altair-map-panel1"></div>
 
+The second series of indicators show economic indicators. 
+
+<div id="altair-map-panel2"></div>
 
 
 
