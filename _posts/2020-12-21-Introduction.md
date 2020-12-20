@@ -8,9 +8,6 @@ altair-loader:
   altair-chart-2: "charts/outputC4.json"
   altair-chart-3: "charts/GDP_chart.json"
   altair-map: "charts/maps_intro.json"
-  
-  need_slider: "charts/test.json"
-
 tags:
   - Github Page
 
@@ -44,8 +41,6 @@ NPS_grped = NPS.groupby('State').count().reset_index()
 
 ```
 After cleaning and grouping the initial data, we can now review the status per state, with three different measurement ways:
-
-<div id="need_slider"></div>
 
 <div id="altair-chart-1"></div>
 
