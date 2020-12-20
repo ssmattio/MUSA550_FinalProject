@@ -1,6 +1,6 @@
 ---
 title: "Regression Analysis"
-date: 2020-12-21
+date: 2020-12-20
 published: true
 tags: [Machine Learning, altair, hvplot, Random Forest]
 excerpt: "Predicting the amount of NPS sites with machine learning."
