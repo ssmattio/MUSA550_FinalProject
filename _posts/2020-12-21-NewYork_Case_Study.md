@@ -8,6 +8,7 @@ altair-loader:
   altair-NY-1: "charts/NY_NPS_Site_Count_altair2.json"
   altair-NY-2: "charts/NY_NPS_Site_Per_Pop_altair.json"
   altair-map-panel: "charts/sixmap.json"
+  altair-years: "charts/NYyears.json"
 toc: false
 toc_sticky: false
 ---
@@ -15,6 +16,12 @@ toc_sticky: false
 To drill down further into the analysis of NPS sites, it is useful to apply the model at a smaller
 scale. New York has one of the highest counts of NPS sites, making it an ideal case study to determine
 the model's strength at both a national and local level.
+
+Before constructing a model to NY, we wish to understand the historic growth of NPS listings through the years.
+
+<div id="altair-years"></div>
+
+In the charts above we can see that the number of listings grew quite steadily between the decades, with the 1980s and the 2000s years expiriencing the largest growth in historic listings. 
 
 ## Distribution of NPS Sites in New York and Key Indicators
 
